@@ -12,19 +12,19 @@ class ViewController: UIViewController
 {
     var playerTurn: Bool = true
     let GravDirection = ["Down","Right","Up","Left"]
-    var Direction = 0
+    var Direction: Int = 0
     var BoardArray = Array(repeating: Array(repeating: 0, count: 7), count: 7)
     var PointArray = Array(repeating: Array(repeating: 0, count: 7), count: 7)
     var XCount: Int = 0
     var YCount: Int = 0
     var counter: Int = 1
-    var sign = 1 //Determines the display according to which player makes the move
+    var sign: Int = 1 //Determines the display according to which player makes the move
     var triggerCount: Int = 0
     let colorRed = UIColor(red: 1, green:0, blue: 0, alpha: 1)
     let colorBlack = UIColor(red: 0, green: 0, blue: 0, alpha: 1)
-    var location = 0
-    var qCounter = 0
-    var checkCount = 0
+    var location: Int = 0
+    var qCounter: Int = 0
+    var checkCount: Int = 0
     
     @IBOutlet weak var DebugLabel: UILabel!
     
