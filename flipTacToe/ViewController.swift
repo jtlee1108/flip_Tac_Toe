@@ -35,14 +35,14 @@ class ViewController: UIViewController
     
     @IBAction func RotateCCW(_ sender: UIButton)
     {
-        if (Direction < 3) { Direction = Direction+1}
+        if (Direction < 3) { Direction += 1}
         else {Direction = 0}
         RunGame()
     }
     
     @IBAction func RotateCW(_ sender: UIButton)
     {
-        if (Direction > 0) { Direction = Direction-1}
+        if (Direction > 0) { Direction -= 1}
         else {Direction = 3}
         RunGame()
     }
@@ -57,14 +57,14 @@ class ViewController: UIViewController
         {
             Squares[counter - 1].textColor = colorBlack
             BoardArray[XCount][YCount] = 0
-            YCount = YCount + 1
+            YCount +=  1
             
             if YCount > 6
             {
                 YCount = 0
-                XCount = XCount+1
+                XCount += 1
             }
-            counter = counter+1
+            counter += 1
         }
         Direction = 0
         RunGame()
@@ -140,12 +140,12 @@ class ViewController: UIViewController
                 Squares[counter - 1].text = "  "
             }
             
-            counter = counter + 1
-            XCount = XCount + 1
+            counter += 1
+            XCount += 1
             if XCount > 6
             {
                 XCount = 0
-                YCount = YCount + 1
+                YCount += 1
             }
         }
     }
@@ -168,17 +168,17 @@ class ViewController: UIViewController
                         BoardArray[XCount][triggerCount] = BoardArray[XCount][YCount]
                         BoardArray[XCount][YCount] = 0
                     }
-                    triggerCount = triggerCount + 1
+                    triggerCount += 1
                 }
-                YCount = YCount + 1
+                YCount += 1
                 
                 if YCount > 6
                 {
                     YCount = 0
-                    XCount = XCount+1
+                    XCount += 1
                     triggerCount = 0
                 }
-                counter = counter+1
+                counter += 1
             }
         case 1: //Gravity Right
             XCount = 6
@@ -190,16 +190,16 @@ class ViewController: UIViewController
                         BoardArray[6-triggerCount][YCount] = BoardArray[XCount][YCount]
                         BoardArray[XCount][YCount] = 0
                     }
-                    triggerCount = triggerCount + 1
+                    triggerCount += 1
                 }
-                XCount = XCount - 1
+                XCount -= 1
                 
                 if XCount < 0{
                     XCount = 6
-                    YCount = YCount+1
+                    YCount += 1
                     triggerCount = 0
                 }
-                counter = counter+1
+                counter += 1
             }
         case 2: //Gravity Up
             XCount = 0
@@ -213,7 +213,7 @@ class ViewController: UIViewController
                         BoardArray[XCount][6-triggerCount] = BoardArray[XCount][YCount]
                         BoardArray[XCount][YCount] = 0
                     }
-                    triggerCount = triggerCount + 1
+                    triggerCount += 1
                 }
                 YCount = YCount - 1
                 
@@ -239,7 +239,7 @@ class ViewController: UIViewController
                     }
                     triggerCount += 1
                 }
-                XCount = XCount + 1
+                XCount += 1
                 
                 if XCount > 6
                 {
@@ -247,7 +247,7 @@ class ViewController: UIViewController
                     YCount += 1
                     triggerCount = 0
                 }
-                counter = counter+1
+                counter += 1
             }
         default: // Should eventually raise error
             print("Direction \(Direction) not valid")
@@ -265,15 +265,20 @@ class ViewController: UIViewController
             }
         }
         
-        for checkCount in [-1 , 1] {
+        for checkCount in [-1 , 1]
+        {
             counter = 1
             XCount = 0
             YCount = 6
-            while counter <= 49 {
-                if BoardArray[XCount][YCount] == checkCount {
+            while counter <= 49
+            {
+                if BoardArray[XCount][YCount] == checkCount
+                {
                     //Check for vertical winner
-                    if YCount >= 3 {
-                        if abs(BoardArray[XCount][YCount] + BoardArray[XCount][YCount - 1] + BoardArray[XCount][YCount - 2] + BoardArray[XCount][YCount - 3]) == 4 {
+                    if YCount >= 3
+                    {
+                        if abs(BoardArray[XCount][YCount] + BoardArray[XCount][YCount - 1] + BoardArray[XCount][YCount - 2] + BoardArray[XCount][YCount - 3]) == 4
+                        {
                             qCounter = 1
                             PointArray[XCount][YCount]      = 1
                             PointArray[XCount][YCount - 1]  = 1
@@ -281,8 +286,10 @@ class ViewController: UIViewController
                             PointArray[XCount][YCount - 3]  = 1
                         }
                     }
-                    if XCount <= 3{
-                        if abs(BoardArray[XCount][YCount] + BoardArray[XCount + 1][YCount] + BoardArray[XCount + 2][YCount] + BoardArray[XCount + 3][YCount]) == 4 {
+                    if XCount <= 3
+                    {
+                        if abs(BoardArray[XCount][YCount] + BoardArray[XCount + 1][YCount] + BoardArray[XCount + 2][YCount] + BoardArray[XCount + 3][YCount]) == 4
+                        {
                             qCounter = 1
                             PointArray[XCount][YCount]      = 1
                             PointArray[XCount + 1][YCount]  = 1
@@ -290,8 +297,10 @@ class ViewController: UIViewController
                             PointArray[XCount + 3][YCount]  = 1
                         }
                     }
-                    if XCount <= 3 && YCount >= 3{
-                        if abs(BoardArray[XCount][YCount] + BoardArray[XCount + 1][YCount - 1] + BoardArray[XCount + 2][YCount - 2] + BoardArray[XCount + 3][YCount - 3]) == 4 {
+                    if XCount <= 3 && YCount >= 3
+                    {
+                        if abs(BoardArray[XCount][YCount] + BoardArray[XCount + 1][YCount - 1] + BoardArray[XCount + 2][YCount - 2] + BoardArray[XCount + 3][YCount - 3]) == 4
+                        {
                             qCounter = 1
                             PointArray[XCount][YCount]      = 1
                             PointArray[XCount + 1][YCount - 1]  = 1
@@ -299,8 +308,10 @@ class ViewController: UIViewController
                             PointArray[XCount + 3][YCount - 3]  = 1
                         }
                     }
-                    if XCount >= 3 && YCount >= 3{
-                        if abs(BoardArray[XCount][YCount] + BoardArray[XCount - 1][YCount - 1] + BoardArray[XCount - 2][YCount - 2] + BoardArray[XCount - 3][YCount - 3]) == 4 {
+                    if XCount >= 3 && YCount >= 3
+                    {
+                        if abs(BoardArray[XCount][YCount] + BoardArray[XCount - 1][YCount - 1] + BoardArray[XCount - 2][YCount - 2] + BoardArray[XCount - 3][YCount - 3]) == 4
+                        {
                             qCounter = 1
                             PointArray[XCount][YCount]      = 1
                             PointArray[XCount - 1][YCount - 1]  = 1
@@ -309,39 +320,49 @@ class ViewController: UIViewController
                             
                         }
                     }
-                }// end of if board array statement
-                counter = counter + 1
-                XCount = XCount + 1
-                if XCount > 6{
+                } // end of if board array statement
+                counter += 1
+                XCount += 1
+                if XCount > 6
+                {
                     XCount = 0
-                    YCount = YCount - 1
+                    YCount -= 1
                 }
                 
-            }//end of while loop
+            } //end of while loop
         }
         counter = 1
         XCount = 0
         YCount = 6
-        while counter <= 49 {
+        while counter <= 49
+        {
             location = (7 * YCount) + XCount
-            if PointArray[XCount][YCount] == 1 {
-                Squares[location].textColor = colorRed}
-            else {
-                Squares[location].textColor = colorBlack }
-            counter = counter + 1
-            XCount = XCount + 1
-            if XCount > 6{
-                XCount = 0
-                YCount = YCount - 1
+            if PointArray[XCount][YCount] == 1
+            {
+                Squares[location].textColor = colorRed
             }
-        }}
+            else
+            {
+                Squares[location].textColor = colorBlack
+            }
+            counter += 1
+            XCount += 1
+            if XCount > 6
+            {
+                XCount = 0
+                YCount -= 1
+            }
+        }
+    }
     
-    override func viewDidLoad() {
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
     
-    override func didReceiveMemoryWarning() {
+    override func didReceiveMemoryWarning()
+    {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
