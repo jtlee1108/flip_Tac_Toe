@@ -18,6 +18,7 @@ class ViewController: UIViewController
     var sign: Int = 1 //Determines the display according to which player makes the move
     let colorRed = UIColor(red: 1, green:0, blue: 0, alpha: 1)
     let colorBlack = UIColor(red: 0, green: 0, blue: 0, alpha: 1)
+    let colorBlue = UIColor(red: 0, green: 0, blue: 1, alpha: 1)
     var checkCount: Int = 0
     var Player1Score: Int = 0
     var Player2Score: Int = 0
@@ -100,6 +101,7 @@ class ViewController: UIViewController
     {
         RunGravity()
         ChangeSquares()
+        
         CheckForPoints()
         
         while pointsAdded{
@@ -135,8 +137,10 @@ class ViewController: UIViewController
                 switch BoardArray[ChangeXCount][ChangeYCount]{
                 case 1:
                     Squares[ChangeLocation].text = "O"
+                    Squares[ChangeLocation].textColor = colorRed
                 case -1:
                     Squares[ChangeLocation].text = "X"
+                    Squares[ChangeLocation].textColor = colorBlue
                 default:
                     Squares[ChangeLocation].text = "  "
                 }
@@ -221,7 +225,6 @@ class ViewController: UIViewController
     
     func CheckForPoints()
     {
-        var CheckLocation = 0
         //First i am setting point array back to zeros
         for CheckXCount in [0,1,2,3,4,5,6]
         {
@@ -317,12 +320,7 @@ class ViewController: UIViewController
         {
             for CheckYCount in [6,5,4,3,2,1,0]
             {
-                CheckLocation = (7 * CheckYCount) + CheckXCount
-                if PointArray[CheckXCount][CheckYCount] == 1 {
-                    Squares[CheckLocation].textColor = colorRed
-                    pointsAdded = true
-                }
-                else { Squares[CheckLocation].textColor = colorBlack}
+                if PointArray[CheckXCount][CheckYCount] == 1 {pointsAdded = true}
             }
         }
         if pointsAdded{
@@ -335,6 +333,13 @@ class ViewController: UIViewController
             }
         }
     }
+    
+    func delay(delay: Double, closure: @escaping () -> ()) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + delay){
+            closure()
+        }
+    }
+    
     override func viewDidLoad()
     {
         super.viewDidLoad()
