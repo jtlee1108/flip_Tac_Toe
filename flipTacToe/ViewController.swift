@@ -55,7 +55,6 @@ class ViewController: UIViewController
             for ResetYCount in 0...6
             {
                 ResetLocation = (7 * ResetYCount) + ResetXCount
-                Squares[ResetLocation].textColor = colorBlack
                 BoardArray[ResetXCount][ResetYCount] = 0
             }
         }
@@ -63,6 +62,7 @@ class ViewController: UIViewController
         RunGame()
         playerTurn = true
         PlayerTurnLabel.text = "Player 1"
+        PlayerTurnLabel.textColor = colorRed
     }
     
     @IBAction func TopButton(_ sender: UIButton) {
@@ -115,15 +115,19 @@ class ViewController: UIViewController
         {
             PlayerTurnLabel.text = "Player 1"
             sign = 1
+            PlayerTurnLabel.textColor = colorRed
         }
         else
         {
             PlayerTurnLabel.text = "Player 2"
             sign = -1
+            PlayerTurnLabel.textColor = colorBlue
         }
         GravityDirectionLabel.text = GravDirection[Direction]
         ScoreBoard[0].text = "Player1 : " + String(Player1Score)
+        ScoreBoard[0].textColor = colorRed
         ScoreBoard[1].text = "Player2 : " + String(Player2Score)
+        ScoreBoard[1].textColor = colorBlue
     } // End RunGame()
     
     func ChangeSquares()
