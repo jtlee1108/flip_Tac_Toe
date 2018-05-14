@@ -15,17 +15,17 @@ class ViewController: UIViewController
     var Direction: Int = 0
     var BoardArray = Array(repeating: Array(repeating: 0, count: 7), count: 7)
     var PointArray = Array(repeating: Array(repeating: 0, count: 7), count: 7)
-    var XCount: Int = 0
-    var YCount: Int = 0
     var sign: Int = 1 //Determines the display according to which player makes the move
-    var triggerCount: Int = 0
     let colorRed = UIColor(red: 1, green:0, blue: 0, alpha: 1)
     let colorBlack = UIColor(red: 0, green: 0, blue: 0, alpha: 1)
-    var location: Int = 0
     var checkCount: Int = 0
+    var Player1Score: Int = 0
+    var Player2Score: Int = 0
     
     @IBOutlet weak var DebugLabel: UILabel!
     
+
+    @IBOutlet var ScoreBoard: [UILabel]!
     @IBOutlet var Squares: [UILabel]!
     @IBOutlet weak var GravityDirectionLabel: UILabel!
     @IBOutlet weak var PlayerTurnLabel: UILabel!
@@ -47,13 +47,14 @@ class ViewController: UIViewController
     
     @IBAction func ResetButton(_ sender: UIButton)
     {
-        for XCount in 0...6
+        var ResetLocation = 0
+        for ResetXCount in 0...6
         {
-            for YCount in 0...6
+            for ResetYCount in 0...6
             {
-                location = (7 * YCount) + XCount
-                Squares[location].textColor = colorBlack
-                BoardArray[XCount][YCount] = 0
+                ResetLocation = (7 * ResetYCount) + ResetXCount
+                Squares[ResetLocation].textColor = colorBlack
+                BoardArray[ResetXCount][ResetYCount] = 0
             }
         }
         Direction = 0
@@ -111,97 +112,99 @@ class ViewController: UIViewController
             sign = -1
         }
         GravityDirectionLabel.text = GravDirection[Direction]
+        ScoreBoard[0].text = "Player1 : " + String(Player1Score)
+        ScoreBoard[1].text = "Player2 : " + String(Player2Score)
     } // End RunGame()
     
     func ChangeSquares()
     {
-        for XCount in 0...6
+        var ChangeLocation = 0
+        for ChangeXCount in 0...6
         {
-            for YCount in 0...6
+            for ChangeYCount in 0...6
             {
-                location = (7 * YCount) + XCount
-                switch BoardArray[XCount][YCount]{
+                ChangeLocation = (7 * ChangeYCount) + ChangeXCount
+                switch BoardArray[ChangeXCount][ChangeYCount]{
                 case 1:
-                    Squares[location].text = "O"
+                    Squares[ChangeLocation].text = "O"
                 case -1:
-                    Squares[location].text = "X"
+                    Squares[ChangeLocation].text = "X"
                 default:
-                    Squares[location].text = "  "
+                    Squares[ChangeLocation].text = "  "
                 }
             }
         }
     }
     func RunGravity()
     {
-        triggerCount = 0
+        var GravTriggerCount = 0
         switch Direction
         {
         case 0: // Gravity Down
-            for XCount in 0...6
+            for GravXCount in 0...6
             {
-                for YCount in 0...6
+                for GravYCount in 0...6
                 {
-                    if BoardArray[XCount][YCount] != 0
+                    if BoardArray[GravXCount][GravYCount] != 0
                     {
-                        if triggerCount != YCount
+                        if GravTriggerCount != GravYCount
                         {
-                            BoardArray[XCount][triggerCount] = BoardArray[XCount][YCount]
-                            BoardArray[XCount][YCount] = 0
+                            BoardArray[GravXCount][GravTriggerCount] = BoardArray[GravXCount][GravYCount]
+                            BoardArray[GravXCount][GravYCount] = 0
                         }
-                        triggerCount += 1
+                        GravTriggerCount += 1
                     }
                 }
-                triggerCount = 0
+                GravTriggerCount = 0
             }
         case 1: //Gravity Right
-            for YCount in 0...6
+            for GravYCount in 0...6
             {
-                for XCount in [6,5,4,3,2,1,0]
+                for GravXCount in [6,5,4,3,2,1,0]
                 {
-                    if BoardArray[XCount][YCount] != 0{
-                        if triggerCount != (6-XCount){
-                            BoardArray[6-triggerCount][YCount] = BoardArray[XCount][YCount]
-                            BoardArray[XCount][YCount] = 0
+                    if BoardArray[GravXCount][GravYCount] != 0{
+                        if GravTriggerCount != (6-GravXCount){
+                            BoardArray[6-GravTriggerCount][GravYCount] = BoardArray[GravXCount][GravYCount]
+                            BoardArray[GravXCount][GravYCount] = 0
                         }
-                        triggerCount += 1
+                        GravTriggerCount += 1
                     }
                 }
-                triggerCount = 0
+                GravTriggerCount = 0
             }
         case 2: //Gravity Up
-            for XCount in 0...6
+            for GravXCount in 0...6
             {
-                for YCount in [6,5,4,3,2,1,0]
+                for GravYCount in [6,5,4,3,2,1,0]
                 {
-                    if BoardArray[XCount][YCount] != 0
+                    if BoardArray[GravXCount][GravYCount] != 0
                     {
-                        if triggerCount != (6-YCount)
+                        if GravTriggerCount != (6-GravYCount)
                         {
-                            BoardArray[XCount][6-triggerCount] = BoardArray[XCount][YCount]
-                            BoardArray[XCount][YCount] = 0
+                            BoardArray[GravXCount][6-GravTriggerCount] = BoardArray[GravXCount][GravYCount]
+                            BoardArray[GravXCount][GravYCount] = 0
                         }
-                        triggerCount += 1
+                        GravTriggerCount += 1
                     }
                 }
-                triggerCount = 0
+                GravTriggerCount = 0
             }
         case 3: //Gravity Left
-            
-            for YCount in 0...6
+            for GravYCount in 0...6
             {
-                for XCount in 0...6
+                for GravXCount in 0...6
                 {
-                    if BoardArray[XCount][YCount] != 0
+                    if BoardArray[GravXCount][GravYCount] != 0
                     {
-                        if triggerCount != (XCount)
+                        if GravTriggerCount != (GravXCount)
                         {
-                            BoardArray[triggerCount][YCount] = BoardArray[XCount][YCount]
-                            BoardArray[XCount][YCount] = 0
+                            BoardArray[GravTriggerCount][GravYCount] = BoardArray[GravXCount][GravYCount]
+                            BoardArray[GravXCount][GravYCount] = 0
                         }
-                        triggerCount += 1
+                        GravTriggerCount += 1
                     }
                 }
-                triggerCount = 0
+                GravTriggerCount = 0
             }
         default: // Should eventually raise error
             print("Direction \(Direction) not valid")
@@ -210,80 +213,105 @@ class ViewController: UIViewController
     
     func CheckForPoints()
     {
+        var CheckLocation = 0
         //First i am setting point array back to zeros
-        for XCount in [0,1,2,3,4,5,6]
+        for CheckXCount in [0,1,2,3,4,5,6]
         {
-            for YCount in 0...6
+            for CheckYCount in 0...6
             {
-                PointArray[XCount][YCount] = 0
+                PointArray[CheckXCount][CheckYCount] = 0
             }
         }
         
-        for checkCount in [-1 , 1]
+        for PlayerCount in [-1 , 1]
         {
-            for XCount in 0...6
+            for CheckXCount in 0...6
             {
-                for YCount in [6,5,4,3,2,1,0]
+                for CheckYCount in [6,5,4,3,2,1,0]
                 {
-                    if BoardArray[XCount][YCount] == checkCount
+                    if BoardArray[CheckXCount][CheckYCount] == PlayerCount
                     {
                         //Check for Vertical
-                        if YCount >= 3
+                        if CheckYCount >= 3
                         {
-                            if abs(BoardArray[XCount][YCount] + BoardArray[XCount][YCount - 1] + BoardArray[XCount][YCount - 2] + BoardArray[XCount][YCount - 3]) == 4
+                            if abs(BoardArray[CheckXCount][CheckYCount] + BoardArray[CheckXCount][CheckYCount - 1] + BoardArray[CheckXCount][CheckYCount - 2] + BoardArray[CheckXCount][CheckYCount - 3]) == 4
                             {
-                                PointArray[XCount][YCount]      = 1
-                                PointArray[XCount][YCount - 1]  = 1
-                                PointArray[XCount][YCount - 2]  = 1
-                                PointArray[XCount][YCount - 3]  = 1
+                                switch PlayerCount{
+                                case -1:
+                                    Player2Score += 1
+                                default:
+                                    Player1Score += 1
+                                }
+                                PointArray[CheckXCount][CheckYCount]      = 1
+                                PointArray[CheckXCount][CheckYCount - 1]  = 1
+                                PointArray[CheckXCount][CheckYCount - 2]  = 1
+                                PointArray[CheckXCount][CheckYCount - 3]  = 1
                             }
                         }
                         //Check for Horizontal
-                        if XCount <= 3
+                        if CheckXCount <= 3
                         {
-                            if abs(BoardArray[XCount][YCount] + BoardArray[XCount + 1][YCount] + BoardArray[XCount + 2][YCount] + BoardArray[XCount + 3][YCount]) == 4
+                            if abs(BoardArray[CheckXCount][CheckYCount] + BoardArray[CheckXCount + 1][CheckYCount] + BoardArray[CheckXCount + 2][CheckYCount] + BoardArray[CheckXCount + 3][CheckYCount]) == 4
                             {
-                                PointArray[XCount][YCount]      = 1
-                                PointArray[XCount + 1][YCount]  = 1
-                                PointArray[XCount + 2][YCount]  = 1
-                                PointArray[XCount + 3][YCount]  = 1
+                                switch PlayerCount{
+                                case -1:
+                                    Player2Score += 1
+                                default:
+                                    Player1Score += 1
+                                }
+                                PointArray[CheckXCount][CheckYCount]      = 1
+                                PointArray[CheckXCount + 1][CheckYCount]  = 1
+                                PointArray[CheckXCount + 2][CheckYCount]  = 1
+                                PointArray[CheckXCount + 3][CheckYCount]  = 1
                             }
                         }
                         //Check for cross \
-                        if XCount <= 3 && YCount >= 3
+                        if CheckXCount <= 3 && CheckYCount >= 3
                         {
-                            if abs(BoardArray[XCount][YCount] + BoardArray[XCount + 1][YCount - 1] + BoardArray[XCount + 2][YCount - 2] + BoardArray[XCount + 3][YCount - 3]) == 4
+                            if abs(BoardArray[CheckXCount][CheckYCount] + BoardArray[CheckXCount + 1][CheckYCount - 1] + BoardArray[CheckXCount + 2][CheckYCount - 2] + BoardArray[CheckXCount + 3][CheckYCount - 3]) == 4
                             {
-                                PointArray[XCount][YCount]      = 1
-                                PointArray[XCount + 1][YCount - 1]  = 1
-                                PointArray[XCount + 2][YCount - 2]  = 1
-                                PointArray[XCount + 3][YCount - 3]  = 1
+                                switch PlayerCount{
+                                case -1:
+                                    Player2Score += 1
+                                default:
+                                    Player1Score += 1
+                                }
+                                PointArray[CheckXCount][CheckYCount]      = 1
+                                PointArray[CheckXCount + 1][CheckYCount - 1]  = 1
+                                PointArray[CheckXCount + 2][CheckYCount - 2]  = 1
+                                PointArray[CheckXCount + 3][CheckYCount - 3]  = 1
                             }
                         }
                         //Check for cross /
-                        if XCount >= 3 && YCount >= 3
+                        if CheckXCount >= 3 && CheckYCount >= 3
                         {
-                            if abs(BoardArray[XCount][YCount] + BoardArray[XCount - 1][YCount - 1] + BoardArray[XCount - 2][YCount - 2] + BoardArray[XCount - 3][YCount - 3]) == 4
+                            if abs(BoardArray[CheckXCount][CheckYCount] + BoardArray[CheckXCount - 1][CheckYCount - 1] + BoardArray[CheckXCount - 2][CheckYCount - 2] + BoardArray[CheckXCount - 3][CheckYCount - 3]) == 4
                             {
-                                PointArray[XCount][YCount]      = 1
-                                PointArray[XCount - 1][YCount - 1]  = 1
-                                PointArray[XCount - 2][YCount - 2]  = 1
-                                PointArray[XCount - 3][YCount - 3]  = 1
+                                switch PlayerCount{
+                                case -1:
+                                    Player2Score += 1
+                                default:
+                                    Player1Score += 1
+                                }
+                                PointArray[CheckXCount][CheckYCount]      = 1
+                                PointArray[CheckXCount - 1][CheckYCount - 1]  = 1
+                                PointArray[CheckXCount - 2][CheckYCount - 2]  = 1
+                                PointArray[CheckXCount - 3][CheckYCount - 3]  = 1
                                 
                             }
                         }
                     } // end of if board array statement
                     
-                } //end of YCount loop
-            } //end of for XCount loop
+                } //end of CheckY loop
+            } //end of for CheckX loop
         }
-        for XCount in 0...6
+        for CheckXCount in 0...6
         {
-            for YCount in [6,5,4,3,2,1,0]
+            for CheckYCount in [6,5,4,3,2,1,0]
             {
-                location = (7 * YCount) + XCount
-                if PointArray[XCount][YCount] == 1 {Squares[location].textColor = colorRed}
-                else { Squares[location].textColor = colorBlack}
+                CheckLocation = (7 * CheckYCount) + CheckXCount
+                if PointArray[CheckXCount][CheckYCount] == 1 {Squares[CheckLocation].textColor = colorRed}
+                else { Squares[CheckLocation].textColor = colorBlack}
             }
         }
     }
