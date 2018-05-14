@@ -21,10 +21,11 @@ class ViewController: UIViewController
     var checkCount: Int = 0
     var Player1Score: Int = 0
     var Player2Score: Int = 0
+    var pointsAdded = false
     
     @IBOutlet weak var DebugLabel: UILabel!
     
-
+    
     @IBOutlet var ScoreBoard: [UILabel]!
     @IBOutlet var Squares: [UILabel]!
     @IBOutlet weak var GravityDirectionLabel: UILabel!
@@ -100,6 +101,13 @@ class ViewController: UIViewController
         RunGravity()
         ChangeSquares()
         CheckForPoints()
+        
+        while pointsAdded{
+            RunGravity()
+            pointsAdded = false
+            ChangeSquares()
+            CheckForPoints()
+        }
         playerTurn = !playerTurn
         if playerTurn
         {
@@ -310,8 +318,20 @@ class ViewController: UIViewController
             for CheckYCount in [6,5,4,3,2,1,0]
             {
                 CheckLocation = (7 * CheckYCount) + CheckXCount
-                if PointArray[CheckXCount][CheckYCount] == 1 {Squares[CheckLocation].textColor = colorRed}
+                if PointArray[CheckXCount][CheckYCount] == 1 {
+                    Squares[CheckLocation].textColor = colorRed
+                    pointsAdded = true
+                }
                 else { Squares[CheckLocation].textColor = colorBlack}
+            }
+        }
+        if pointsAdded{
+            for CheckXCount in 0...6
+            {
+                for CheckYCount in [6,5,4,3,2,1,0]
+                {
+                    if PointArray[CheckXCount][CheckYCount] == 1 {BoardArray[CheckXCount][CheckYCount] = 0}
+                }
             }
         }
     }
