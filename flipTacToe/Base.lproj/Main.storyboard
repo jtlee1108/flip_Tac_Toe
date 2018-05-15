@@ -78,13 +78,6 @@
                                     <action selector="TopButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ywl-QD-gcG"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Down" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ll4-wt-hw2">
-                                <rect key="frame" x="166" y="129" width="44" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rot-cN-mJF">
                                 <rect key="frame" x="234" y="46" width="97" height="88"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -648,13 +641,17 @@
                                 <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="GravArrow" translatesAutoresizingMaskIntoConstraints="NO" id="eFA-TP-CPM">
+                                <rect key="frame" x="154" y="112" width="60" height="74"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="DebugLabel" destination="jFN-wX-p6R" id="W5b-n1-Nv0"/>
-                        <outlet property="GravityDirectionLabel" destination="ll4-wt-hw2" id="4RS-eY-uAB"/>
+                        <outlet property="GravArrow" destination="eFA-TP-CPM" id="StE-eS-HuT"/>
                         <outlet property="PlayerTurnLabel" destination="RAg-Y8-LCv" id="8Va-b8-Adr"/>
                         <outletCollection property="Squares" destination="JeB-bm-Fp1" collectionClass="NSMutableArray" id="bG9-v4-wsb"/>
                         <outletCollection property="Squares" destination="Aez-Dp-AvX" collectionClass="NSMutableArray" id="Ytc-Ic-6Yn"/>
@@ -745,6 +742,7 @@
     <resources>
         <image name="CCW" width="512" height="512"/>
         <image name="CW" width="512" height="512"/>
+        <image name="GravArrow" width="457" height="600"/>
         <image name="arrowDown" width="868" height="868"/>
         <image name="arrowLeft" width="868" height="868"/>
         <image name="arrowRight" width="868" height="868"/>

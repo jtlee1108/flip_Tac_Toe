@@ -27,9 +27,9 @@ class ViewController: UIViewController
     @IBOutlet weak var DebugLabel: UILabel!
     @IBOutlet var ScoreBoard: [UILabel]!
     @IBOutlet var Squares: [UILabel]!
-    @IBOutlet weak var GravityDirectionLabel: UILabel!
     @IBOutlet weak var PlayerTurnLabel: UILabel!
     
+    @IBOutlet weak var GravArrow: UIImageView!
     @IBAction func RotateCCW(_ sender: UIButton)
     {
         if (direction < 3) { direction += 1}
@@ -127,27 +127,30 @@ class ViewController: UIViewController
             sign = -1
             PlayerTurnLabel.textColor = colorBlue
         }
-        GravityDirectionLabel.text = gravDirection[direction]
         for i in 0...6
         {
             switch direction
             {
             case 0:
+                if i == 0 {rotateImage(angle: 0.0)}
                 TopButtonOutlet[i].isHidden = false
                 LeftButtonOutlet[i].isHidden = true
                 BottomButtonOutlet[i].isHidden = true
                 RightButtonOutlet[i].isHidden = true
             case 1:
+                if i == 0 {rotateImage(angle: 270.0)}
                 TopButtonOutlet[i].isHidden = true
                 LeftButtonOutlet[i].isHidden = false
                 BottomButtonOutlet[i].isHidden = true
                 RightButtonOutlet[i].isHidden = true
             case 2:
+                if i == 0 {rotateImage(angle: 180.0)}
                 TopButtonOutlet[i].isHidden = true
                 LeftButtonOutlet[i].isHidden = true
                 BottomButtonOutlet[i].isHidden = false
                 RightButtonOutlet[i].isHidden = true
             default:
+                if i == 0 {rotateImage(angle: 90.0)}
                 TopButtonOutlet[i].isHidden = true
                 LeftButtonOutlet[i].isHidden = true
                 BottomButtonOutlet[i].isHidden = true
@@ -373,6 +376,12 @@ class ViewController: UIViewController
         DispatchQueue.main.asyncAfter(deadline: .now() + delay){
             closure()
         }
+    }
+    
+    @IBAction func rotateImage(angle: CGFloat) {
+        UIView.animate(withDuration: 0.35, animations: {
+            self.GravArrow.transform = CGAffineTransform(rotationAngle: (angle * .pi) / 180.0)
+        })
     }
     
     override func viewDidLoad()
