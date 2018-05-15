@@ -23,57 +23,57 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QVx-Bq-LOc">
-                                <rect key="frame" x="46" y="195" width="39" height="37"/>
+                                <rect key="frame" x="46" y="194" width="37" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="Button-Blank-Blue-icon"/>
+                                <state key="normal" title="Button" image="arrowDown"/>
                                 <connections>
                                     <action selector="TopButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oxD-rY-S3X"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Um6-sG-fFz">
-                                <rect key="frame" x="88" y="195" width="39" height="37"/>
+                                <rect key="frame" x="88" y="194" width="37" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="Button-Blank-Blue-icon"/>
+                                <state key="normal" title="Button" image="arrowDown"/>
                                 <connections>
                                     <action selector="TopButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qrU-8x-FeN"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Feb-OP-K8V">
-                                <rect key="frame" x="128" y="195" width="39" height="37"/>
+                                <rect key="frame" x="128" y="194" width="37" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="Button-Blank-Blue-icon"/>
+                                <state key="normal" title="Button" image="arrowDown"/>
                                 <connections>
                                     <action selector="TopButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BJn-IM-zXt"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X2S-4D-7jw">
-                                <rect key="frame" x="169" y="195" width="39" height="37"/>
+                                <rect key="frame" x="169" y="194" width="37" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="Button-Blank-Blue-icon"/>
+                                <state key="normal" title="Button" image="arrowDown"/>
                                 <connections>
                                     <action selector="TopButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZFx-MV-sOb"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sse-DA-v98">
-                                <rect key="frame" x="210" y="195" width="39" height="37"/>
+                                <rect key="frame" x="210" y="194" width="37" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="Button-Blank-Blue-icon"/>
+                                <state key="normal" title="Button" image="arrowDown"/>
                                 <connections>
                                     <action selector="TopButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YeP-JM-xuI"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="6" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KnP-Hr-ih2">
-                                <rect key="frame" x="251" y="195" width="39" height="37"/>
+                                <rect key="frame" x="251" y="194" width="37" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="Button-Blank-Blue-icon"/>
+                                <state key="normal" title="Button" image="arrowDown"/>
                                 <connections>
                                     <action selector="TopButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="89d-M6-X7X"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="7" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cPh-tw-8iy">
-                                <rect key="frame" x="291" y="195" width="39" height="37"/>
+                                <rect key="frame" x="291" y="194" width="37" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="Button-Blank-Blue-icon"/>
+                                <state key="normal" title="Button" image="arrowDown"/>
                                 <connections>
                                     <action selector="TopButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ywl-QD-gcG"/>
                                 </connections>
@@ -466,170 +466,170 @@
                                     <action selector="ResetButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZCr-c0-cvb"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kW5-cA-fqQ">
-                                <rect key="frame" x="46" y="520" width="39" height="37"/>
+                            <button hidden="YES" opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kW5-cA-fqQ">
+                                <rect key="frame" x="46" y="521" width="37" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="Button-Blank-Blue-icon"/>
+                                <state key="normal" title="Button" image="arrowUp"/>
                                 <connections>
                                     <action selector="BottomButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bIb-0o-Rbc"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aJG-Or-Qcl">
-                                <rect key="frame" x="88" y="520" width="39" height="37"/>
+                            <button hidden="YES" opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aJG-Or-Qcl">
+                                <rect key="frame" x="88" y="521" width="37" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="Button-Blank-Blue-icon"/>
+                                <state key="normal" title="Button" image="arrowUp"/>
                                 <connections>
                                     <action selector="BottomButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HVR-oQ-NxY"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m1b-kM-04Z">
-                                <rect key="frame" x="128" y="520" width="39" height="37"/>
+                            <button hidden="YES" opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m1b-kM-04Z">
+                                <rect key="frame" x="128" y="521" width="37" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="Button-Blank-Blue-icon"/>
+                                <state key="normal" title="Button" image="arrowUp"/>
                                 <connections>
                                     <action selector="BottomButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="p4z-Vp-dQy"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rxn-Wf-ygo">
-                                <rect key="frame" x="169" y="520" width="39" height="37"/>
+                            <button hidden="YES" opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rxn-Wf-ygo">
+                                <rect key="frame" x="169" y="521" width="37" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="Button-Blank-Blue-icon"/>
+                                <state key="normal" title="Button" image="arrowUp"/>
                                 <connections>
                                     <action selector="BottomButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="65W-PN-lY0"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R1c-a7-prv">
-                                <rect key="frame" x="210" y="520" width="39" height="37"/>
+                            <button hidden="YES" opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R1c-a7-prv">
+                                <rect key="frame" x="210" y="521" width="37" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="Button-Blank-Blue-icon"/>
+                                <state key="normal" title="Button" image="arrowUp"/>
                                 <connections>
                                     <action selector="BottomButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Kn9-wd-aBj"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="6" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JCr-H2-7pU">
-                                <rect key="frame" x="251" y="520" width="39" height="37"/>
+                            <button hidden="YES" opaque="NO" tag="6" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JCr-H2-7pU">
+                                <rect key="frame" x="251" y="521" width="37" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="Button-Blank-Blue-icon"/>
+                                <state key="normal" title="Button" image="arrowUp"/>
                                 <connections>
                                     <action selector="BottomButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="d0G-dn-YNz"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="7" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PTH-2q-dE0">
-                                <rect key="frame" x="291" y="520" width="39" height="37"/>
+                            <button hidden="YES" opaque="NO" tag="7" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PTH-2q-dE0">
+                                <rect key="frame" x="291" y="521" width="37" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="Button-Blank-Blue-icon"/>
+                                <state key="normal" title="Button" image="arrowUp"/>
                                 <connections>
                                     <action selector="BottomButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0Ab-pL-NAh"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zkh-4U-VZ4">
-                                <rect key="frame" x="4" y="481" width="39" height="37"/>
+                            <button hidden="YES" opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zkh-4U-VZ4">
+                                <rect key="frame" x="4" y="481" width="37" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="Button-Blank-Blue-icon"/>
+                                <state key="normal" title="Button" image="arrowRight"/>
                                 <connections>
                                     <action selector="LeftButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Mn9-TG-C3Z"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CkF-xD-VVS">
-                                <rect key="frame" x="4" y="439" width="39" height="37"/>
+                            <button hidden="YES" opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CkF-xD-VVS">
+                                <rect key="frame" x="4" y="439" width="37" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="Button-Blank-Blue-icon"/>
+                                <state key="normal" title="Button" image="arrowRight"/>
                                 <connections>
                                     <action selector="LeftButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DRd-kG-Q6l"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mrj-vw-1Dh">
-                                <rect key="frame" x="4" y="398" width="39" height="37"/>
+                            <button hidden="YES" opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mrj-vw-1Dh">
+                                <rect key="frame" x="4" y="398" width="37" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="Button-Blank-Blue-icon"/>
+                                <state key="normal" title="Button" image="arrowRight"/>
                                 <connections>
                                     <action selector="LeftButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="38O-BL-C5R"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aQo-S2-lXh">
-                                <rect key="frame" x="4" y="357" width="39" height="37"/>
+                            <button hidden="YES" opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aQo-S2-lXh">
+                                <rect key="frame" x="4" y="357" width="37" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="Button-Blank-Blue-icon"/>
+                                <state key="normal" title="Button" image="arrowRight"/>
                                 <connections>
                                     <action selector="LeftButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eEb-28-pji"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aoE-Lq-Y0n">
-                                <rect key="frame" x="4" y="316" width="39" height="37"/>
+                            <button hidden="YES" opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aoE-Lq-Y0n">
+                                <rect key="frame" x="4" y="316" width="37" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="Button-Blank-Blue-icon"/>
+                                <state key="normal" title="Button" image="arrowRight"/>
                                 <connections>
                                     <action selector="LeftButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cbE-Fv-lXh"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="6" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tCy-Yt-RKd">
-                                <rect key="frame" x="4" y="274" width="39" height="37"/>
+                            <button hidden="YES" opaque="NO" tag="6" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tCy-Yt-RKd">
+                                <rect key="frame" x="4" y="274" width="37" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="Button-Blank-Blue-icon"/>
+                                <state key="normal" title="Button" image="arrowRight"/>
                                 <connections>
                                     <action selector="LeftButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1VA-qS-t4z"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="7" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p5e-DF-nXa">
-                                <rect key="frame" x="4" y="234" width="39" height="37"/>
+                            <button hidden="YES" opaque="NO" tag="7" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p5e-DF-nXa">
+                                <rect key="frame" x="4" y="234" width="37" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="Button-Blank-Blue-icon"/>
+                                <state key="normal" title="Button" image="arrowRight"/>
                                 <connections>
                                     <action selector="LeftButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qbg-zv-0Pn"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rxL-6E-qWl">
-                                <rect key="frame" x="332" y="481" width="39" height="37"/>
+                            <button hidden="YES" opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rxL-6E-qWl">
+                                <rect key="frame" x="332" y="481" width="37" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="Button-Blank-Blue-icon"/>
+                                <state key="normal" title="Button" image="arrowLeft"/>
                                 <connections>
                                     <action selector="RightButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4DA-7u-Evm"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MAE-al-h7e">
-                                <rect key="frame" x="332" y="439" width="39" height="37"/>
+                            <button hidden="YES" opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MAE-al-h7e">
+                                <rect key="frame" x="332" y="439" width="37" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="Button-Blank-Blue-icon"/>
+                                <state key="normal" title="Button" image="arrowLeft"/>
                                 <connections>
                                     <action selector="RightButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gLB-f9-PKA"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YSd-4U-8vE">
-                                <rect key="frame" x="332" y="398" width="39" height="37"/>
+                            <button hidden="YES" opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YSd-4U-8vE">
+                                <rect key="frame" x="332" y="398" width="37" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="Button-Blank-Blue-icon"/>
+                                <state key="normal" title="Button" image="arrowLeft"/>
                                 <connections>
                                     <action selector="RightButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fdi-oG-CWc"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R6R-7k-fMF">
-                                <rect key="frame" x="332" y="316" width="39" height="37"/>
+                            <button hidden="YES" opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R6R-7k-fMF">
+                                <rect key="frame" x="332" y="316" width="37" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="Button-Blank-Blue-icon"/>
+                                <state key="normal" title="Button" image="arrowLeft"/>
                                 <connections>
                                     <action selector="RightButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="o6e-dj-2ve"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="6" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2I4-VO-1uk">
-                                <rect key="frame" x="332" y="274" width="39" height="37"/>
+                            <button hidden="YES" opaque="NO" tag="6" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2I4-VO-1uk">
+                                <rect key="frame" x="332" y="274" width="37" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="Button-Blank-Blue-icon"/>
+                                <state key="normal" title="Button" image="arrowLeft"/>
                                 <connections>
                                     <action selector="RightButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="h3W-cO-0pG"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="7" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vua-3F-HZa">
-                                <rect key="frame" x="332" y="234" width="39" height="37"/>
+                            <button hidden="YES" opaque="NO" tag="7" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vua-3F-HZa">
+                                <rect key="frame" x="332" y="234" width="37" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="Button-Blank-Blue-icon"/>
+                                <state key="normal" title="Button" image="arrowLeft"/>
                                 <connections>
                                     <action selector="RightButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qmH-rG-aUv"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4D2-5h-VbI">
-                                <rect key="frame" x="332" y="357" width="39" height="37"/>
+                            <button hidden="YES" opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4D2-5h-VbI">
+                                <rect key="frame" x="332" y="357" width="37" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="Button-Blank-Blue-icon"/>
+                                <state key="normal" title="Button" image="arrowLeft"/>
                                 <connections>
                                     <action selector="RightButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vAz-1d-5te"/>
                                 </connections>
@@ -649,7 +649,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
@@ -707,6 +707,34 @@
                         <outletCollection property="Squares" destination="zG1-gy-RBM" collectionClass="NSMutableArray" id="WEa-Gh-YSd"/>
                         <outletCollection property="ScoreBoard" destination="jYF-m2-F8C" collectionClass="NSMutableArray" id="9g1-Ah-x8w"/>
                         <outletCollection property="ScoreBoard" destination="fPM-Mb-K8y" collectionClass="NSMutableArray" id="uDI-vA-zVz"/>
+                        <outletCollection property="TopButtonOutlet" destination="QVx-Bq-LOc" collectionClass="NSMutableArray" id="dkk-YB-z0E"/>
+                        <outletCollection property="TopButtonOutlet" destination="Um6-sG-fFz" collectionClass="NSMutableArray" id="Cuh-O8-Pdz"/>
+                        <outletCollection property="TopButtonOutlet" destination="Feb-OP-K8V" collectionClass="NSMutableArray" id="YoQ-Ul-jsL"/>
+                        <outletCollection property="TopButtonOutlet" destination="X2S-4D-7jw" collectionClass="NSMutableArray" id="6fJ-e2-oi9"/>
+                        <outletCollection property="TopButtonOutlet" destination="Sse-DA-v98" collectionClass="NSMutableArray" id="oWz-98-ihk"/>
+                        <outletCollection property="TopButtonOutlet" destination="KnP-Hr-ih2" collectionClass="NSMutableArray" id="kcK-IN-Oqh"/>
+                        <outletCollection property="TopButtonOutlet" destination="cPh-tw-8iy" collectionClass="NSMutableArray" id="hrl-Ov-Sgn"/>
+                        <outletCollection property="LeftButtonOutlet" destination="Zkh-4U-VZ4" collectionClass="NSMutableArray" id="j2R-BC-unV"/>
+                        <outletCollection property="LeftButtonOutlet" destination="CkF-xD-VVS" collectionClass="NSMutableArray" id="3N5-yz-pKr"/>
+                        <outletCollection property="LeftButtonOutlet" destination="Mrj-vw-1Dh" collectionClass="NSMutableArray" id="nLF-TK-43x"/>
+                        <outletCollection property="LeftButtonOutlet" destination="aQo-S2-lXh" collectionClass="NSMutableArray" id="Bcl-A9-r0J"/>
+                        <outletCollection property="LeftButtonOutlet" destination="aoE-Lq-Y0n" collectionClass="NSMutableArray" id="6MC-cV-xHQ"/>
+                        <outletCollection property="LeftButtonOutlet" destination="tCy-Yt-RKd" collectionClass="NSMutableArray" id="ixW-8l-MxZ"/>
+                        <outletCollection property="LeftButtonOutlet" destination="p5e-DF-nXa" collectionClass="NSMutableArray" id="WpJ-UI-3PA"/>
+                        <outletCollection property="BottomButtonOutlet" destination="kW5-cA-fqQ" collectionClass="NSMutableArray" id="jA1-iP-1Yg"/>
+                        <outletCollection property="BottomButtonOutlet" destination="aJG-Or-Qcl" collectionClass="NSMutableArray" id="RcH-1y-DDA"/>
+                        <outletCollection property="BottomButtonOutlet" destination="m1b-kM-04Z" collectionClass="NSMutableArray" id="7kC-X4-cQj"/>
+                        <outletCollection property="BottomButtonOutlet" destination="rxn-Wf-ygo" collectionClass="NSMutableArray" id="0bJ-on-BaA"/>
+                        <outletCollection property="BottomButtonOutlet" destination="R1c-a7-prv" collectionClass="NSMutableArray" id="PW2-LI-4rS"/>
+                        <outletCollection property="BottomButtonOutlet" destination="JCr-H2-7pU" collectionClass="NSMutableArray" id="4DS-gq-otw"/>
+                        <outletCollection property="BottomButtonOutlet" destination="PTH-2q-dE0" collectionClass="NSMutableArray" id="l9o-M2-71D"/>
+                        <outletCollection property="RightButtonOutlet" destination="rxL-6E-qWl" collectionClass="NSMutableArray" id="DHV-qx-GYE"/>
+                        <outletCollection property="RightButtonOutlet" destination="MAE-al-h7e" collectionClass="NSMutableArray" id="hT1-jb-HXf"/>
+                        <outletCollection property="RightButtonOutlet" destination="YSd-4U-8vE" collectionClass="NSMutableArray" id="BfA-n8-Vm5"/>
+                        <outletCollection property="RightButtonOutlet" destination="4D2-5h-VbI" collectionClass="NSMutableArray" id="o3X-BM-1xH"/>
+                        <outletCollection property="RightButtonOutlet" destination="R6R-7k-fMF" collectionClass="NSMutableArray" id="gNU-Qd-qmY"/>
+                        <outletCollection property="RightButtonOutlet" destination="2I4-VO-1uk" collectionClass="NSMutableArray" id="6Ja-O9-Km6"/>
+                        <outletCollection property="RightButtonOutlet" destination="Vua-3F-HZa" collectionClass="NSMutableArray" id="ehN-9e-wWs"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -715,9 +743,12 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Button-Blank-Blue-icon" width="256" height="256"/>
         <image name="CCW" width="512" height="512"/>
         <image name="CW" width="512" height="512"/>
+        <image name="arrowDown" width="868" height="868"/>
+        <image name="arrowLeft" width="868" height="868"/>
+        <image name="arrowRight" width="868" height="868"/>
+        <image name="arrowUp" width="868" height="868"/>
         <image name="grid" width="974" height="977"/>
     </resources>
 </document>

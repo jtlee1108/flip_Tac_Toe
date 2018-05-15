@@ -49,12 +49,10 @@ class ViewController: UIViewController
     
     @IBAction func ResetButton(_ sender: UIButton)
     {
-        var ResetLocation = 0
         for ResetXCount in 0...6
         {
             for ResetYCount in 0...6
             {
-                ResetLocation = (7 * ResetYCount) + ResetXCount
                 BoardArray[ResetXCount][ResetYCount] = 0
             }
         }
@@ -72,6 +70,8 @@ class ViewController: UIViewController
             RunGame()
         }
     }
+    @IBOutlet var TopButtonOutlet: [UIButton]!
+    
     
     @IBAction func LeftButton(_ sender: UIButton) {
         if Direction == 1 && BoardArray[0] [sender.tag - 1] == 0
@@ -80,6 +80,8 @@ class ViewController: UIViewController
             RunGame()
         }
     }
+    @IBOutlet var LeftButtonOutlet: [UIButton]!
+    
     
     @IBAction func BottomButton(_ sender: UIButton) {
         if Direction == 2 && BoardArray[sender.tag - 1] [0] == 0
@@ -88,6 +90,7 @@ class ViewController: UIViewController
             RunGame()
         }
     }
+    @IBOutlet var BottomButtonOutlet: [UIButton]!
     
     @IBAction func RightButton(_ sender: UIButton) {
         if Direction == 3 && BoardArray[6] [sender.tag - 1] == 0
@@ -96,6 +99,8 @@ class ViewController: UIViewController
             RunGame()
         }
     }
+    @IBOutlet var RightButtonOutlet: [UIButton]!
+    
     
     func RunGame()
     {
@@ -124,6 +129,32 @@ class ViewController: UIViewController
             PlayerTurnLabel.textColor = colorBlue
         }
         GravityDirectionLabel.text = GravDirection[Direction]
+        for i in 0...6
+        {
+            switch Direction
+            {
+            case 0:
+                TopButtonOutlet[i].isHidden = false
+                LeftButtonOutlet[i].isHidden = true
+                BottomButtonOutlet[i].isHidden = true
+                RightButtonOutlet[i].isHidden = true
+            case 1:
+                TopButtonOutlet[i].isHidden = true
+                LeftButtonOutlet[i].isHidden = false
+                BottomButtonOutlet[i].isHidden = true
+                RightButtonOutlet[i].isHidden = true
+            case 2:
+                TopButtonOutlet[i].isHidden = true
+                LeftButtonOutlet[i].isHidden = true
+                BottomButtonOutlet[i].isHidden = false
+                RightButtonOutlet[i].isHidden = true
+            default:
+                TopButtonOutlet[i].isHidden = true
+                LeftButtonOutlet[i].isHidden = true
+                BottomButtonOutlet[i].isHidden = true
+                RightButtonOutlet[i].isHidden = false
+            }
+        }
         ScoreBoard[0].text = "Player1 : " + String(Player1Score)
         ScoreBoard[0].textColor = colorRed
         ScoreBoard[1].text = "Player2 : " + String(Player2Score)
