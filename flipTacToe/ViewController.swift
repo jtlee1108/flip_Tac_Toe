@@ -133,28 +133,24 @@ class ViewController: UIViewController
             {
             case 0:
                 if i == 0 {rotateImage(angle: 0.0)}
-                TopButtonOutlet[i].isHidden = false
-                LeftButtonOutlet[i].isHidden = true
-                BottomButtonOutlet[i].isHidden = true
-                RightButtonOutlet[i].isHidden = true
+                TopButtonOutlet[i].fadeIn()
+                if LeftButtonOutlet[i].alpha != 0 {LeftButtonOutlet[i].fadeOut()}
+                if RightButtonOutlet[i].alpha != 0 {RightButtonOutlet[i].fadeOut()}
             case 1:
                 if i == 0 {rotateImage(angle: 270.0)}
-                TopButtonOutlet[i].isHidden = true
-                LeftButtonOutlet[i].isHidden = false
-                BottomButtonOutlet[i].isHidden = true
-                RightButtonOutlet[i].isHidden = true
+                LeftButtonOutlet[i].fadeIn()
+                if  TopButtonOutlet[i].alpha != 0 {TopButtonOutlet[i].fadeOut()}
+                if BottomButtonOutlet[i].alpha != 0 {BottomButtonOutlet[i].fadeOut()}
             case 2:
                 if i == 0 {rotateImage(angle: 180.0)}
-                TopButtonOutlet[i].isHidden = true
-                LeftButtonOutlet[i].isHidden = true
-                BottomButtonOutlet[i].isHidden = false
-                RightButtonOutlet[i].isHidden = true
+                BottomButtonOutlet[i].fadeIn()
+                if LeftButtonOutlet[i].alpha != 0 {LeftButtonOutlet[i].fadeOut()}
+                if RightButtonOutlet[i].alpha != 0 {RightButtonOutlet[i].fadeOut()}
             default:
                 if i == 0 {rotateImage(angle: 90.0)}
-                TopButtonOutlet[i].isHidden = true
-                LeftButtonOutlet[i].isHidden = true
-                BottomButtonOutlet[i].isHidden = true
-                RightButtonOutlet[i].isHidden = false
+                if  TopButtonOutlet[i].alpha != 0 {TopButtonOutlet[i].fadeOut()}
+                if BottomButtonOutlet[i].alpha != 0 {BottomButtonOutlet[i].fadeOut()}
+                RightButtonOutlet[i].fadeIn()
             }
         }
         ScoreBoard[0].text = "Player1 : " + String(player1Score)
@@ -379,7 +375,7 @@ class ViewController: UIViewController
     }
     
     @IBAction func rotateImage(angle: CGFloat) {
-        UIView.animate(withDuration: 0.35, animations: {
+        UIView.animate(withDuration: 0.325, animations: {
             self.GravArrow.transform = CGAffineTransform(rotationAngle: (angle * .pi) / 180.0)
         })
     }

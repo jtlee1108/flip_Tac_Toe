@@ -25,7 +25,9 @@
                             <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QVx-Bq-LOc">
                                 <rect key="frame" x="46" y="194" width="37" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="arrowDown"/>
+                                <state key="normal" title="Button" image="arrowDown">
+                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <action selector="TopButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oxD-rY-S3X"/>
                                 </connections>
@@ -459,7 +461,7 @@
                                     <action selector="ResetButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZCr-c0-cvb"/>
                                 </connections>
                             </button>
-                            <button hidden="YES" opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kW5-cA-fqQ">
+                            <button opaque="NO" alpha="0.0" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kW5-cA-fqQ">
                                 <rect key="frame" x="46" y="521" width="37" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="arrowUp"/>
@@ -467,7 +469,7 @@
                                     <action selector="BottomButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bIb-0o-Rbc"/>
                                 </connections>
                             </button>
-                            <button hidden="YES" opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aJG-Or-Qcl">
+                            <button opaque="NO" alpha="0.0" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aJG-Or-Qcl">
                                 <rect key="frame" x="88" y="521" width="37" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="arrowUp"/>
@@ -475,7 +477,7 @@
                                     <action selector="BottomButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HVR-oQ-NxY"/>
                                 </connections>
                             </button>
-                            <button hidden="YES" opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m1b-kM-04Z">
+                            <button opaque="NO" alpha="0.0" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m1b-kM-04Z">
                                 <rect key="frame" x="128" y="521" width="37" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="arrowUp"/>
@@ -483,7 +485,7 @@
                                     <action selector="BottomButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="p4z-Vp-dQy"/>
                                 </connections>
                             </button>
-                            <button hidden="YES" opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rxn-Wf-ygo">
+                            <button opaque="NO" alpha="0.0" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rxn-Wf-ygo">
                                 <rect key="frame" x="169" y="521" width="37" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="arrowUp"/>
@@ -491,7 +493,7 @@
                                     <action selector="BottomButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="65W-PN-lY0"/>
                                 </connections>
                             </button>
-                            <button hidden="YES" opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R1c-a7-prv">
+                            <button opaque="NO" alpha="0.0" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R1c-a7-prv">
                                 <rect key="frame" x="210" y="521" width="37" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="arrowUp"/>
@@ -499,7 +501,7 @@
                                     <action selector="BottomButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Kn9-wd-aBj"/>
                                 </connections>
                             </button>
-                            <button hidden="YES" opaque="NO" tag="6" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JCr-H2-7pU">
+                            <button opaque="NO" alpha="0.0" tag="6" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JCr-H2-7pU">
                                 <rect key="frame" x="251" y="521" width="37" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="arrowUp"/>
@@ -507,7 +509,7 @@
                                     <action selector="BottomButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="d0G-dn-YNz"/>
                                 </connections>
                             </button>
-                            <button hidden="YES" opaque="NO" tag="7" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PTH-2q-dE0">
+                            <button opaque="NO" alpha="0.0" tag="7" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PTH-2q-dE0">
                                 <rect key="frame" x="291" y="521" width="37" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="arrowUp"/>
@@ -515,7 +517,7 @@
                                     <action selector="BottomButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0Ab-pL-NAh"/>
                                 </connections>
                             </button>
-                            <button hidden="YES" opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zkh-4U-VZ4">
+                            <button opaque="NO" alpha="0.0" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zkh-4U-VZ4">
                                 <rect key="frame" x="4" y="481" width="37" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="arrowRight"/>
@@ -523,7 +525,7 @@
                                     <action selector="LeftButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Mn9-TG-C3Z"/>
                                 </connections>
                             </button>
-                            <button hidden="YES" opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CkF-xD-VVS">
+                            <button opaque="NO" alpha="0.0" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CkF-xD-VVS">
                                 <rect key="frame" x="4" y="439" width="37" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="arrowRight"/>
@@ -531,7 +533,7 @@
                                     <action selector="LeftButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DRd-kG-Q6l"/>
                                 </connections>
                             </button>
-                            <button hidden="YES" opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mrj-vw-1Dh">
+                            <button opaque="NO" alpha="0.0" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mrj-vw-1Dh">
                                 <rect key="frame" x="4" y="398" width="37" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="arrowRight"/>
@@ -539,7 +541,7 @@
                                     <action selector="LeftButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="38O-BL-C5R"/>
                                 </connections>
                             </button>
-                            <button hidden="YES" opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aQo-S2-lXh">
+                            <button opaque="NO" alpha="0.0" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aQo-S2-lXh">
                                 <rect key="frame" x="4" y="357" width="37" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="arrowRight"/>
@@ -547,7 +549,7 @@
                                     <action selector="LeftButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eEb-28-pji"/>
                                 </connections>
                             </button>
-                            <button hidden="YES" opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aoE-Lq-Y0n">
+                            <button opaque="NO" alpha="0.0" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aoE-Lq-Y0n">
                                 <rect key="frame" x="4" y="316" width="37" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="arrowRight"/>
@@ -555,7 +557,7 @@
                                     <action selector="LeftButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cbE-Fv-lXh"/>
                                 </connections>
                             </button>
-                            <button hidden="YES" opaque="NO" tag="6" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tCy-Yt-RKd">
+                            <button opaque="NO" alpha="0.0" tag="6" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tCy-Yt-RKd">
                                 <rect key="frame" x="4" y="274" width="37" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="arrowRight"/>
@@ -563,7 +565,7 @@
                                     <action selector="LeftButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1VA-qS-t4z"/>
                                 </connections>
                             </button>
-                            <button hidden="YES" opaque="NO" tag="7" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p5e-DF-nXa">
+                            <button opaque="NO" alpha="0.0" tag="7" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p5e-DF-nXa">
                                 <rect key="frame" x="4" y="234" width="37" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="arrowRight"/>
@@ -571,7 +573,7 @@
                                     <action selector="LeftButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qbg-zv-0Pn"/>
                                 </connections>
                             </button>
-                            <button hidden="YES" opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rxL-6E-qWl">
+                            <button opaque="NO" alpha="0.0" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rxL-6E-qWl">
                                 <rect key="frame" x="332" y="481" width="37" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="arrowLeft"/>
@@ -579,7 +581,7 @@
                                     <action selector="RightButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4DA-7u-Evm"/>
                                 </connections>
                             </button>
-                            <button hidden="YES" opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MAE-al-h7e">
+                            <button opaque="NO" alpha="0.0" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MAE-al-h7e">
                                 <rect key="frame" x="332" y="439" width="37" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="arrowLeft"/>
@@ -587,7 +589,7 @@
                                     <action selector="RightButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gLB-f9-PKA"/>
                                 </connections>
                             </button>
-                            <button hidden="YES" opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YSd-4U-8vE">
+                            <button opaque="NO" alpha="0.0" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YSd-4U-8vE">
                                 <rect key="frame" x="332" y="398" width="37" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="arrowLeft"/>
@@ -595,7 +597,7 @@
                                     <action selector="RightButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fdi-oG-CWc"/>
                                 </connections>
                             </button>
-                            <button hidden="YES" opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R6R-7k-fMF">
+                            <button opaque="NO" alpha="0.0" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R6R-7k-fMF">
                                 <rect key="frame" x="332" y="316" width="37" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="arrowLeft"/>
@@ -603,7 +605,7 @@
                                     <action selector="RightButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="o6e-dj-2ve"/>
                                 </connections>
                             </button>
-                            <button hidden="YES" opaque="NO" tag="6" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2I4-VO-1uk">
+                            <button opaque="NO" alpha="0.0" tag="6" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2I4-VO-1uk">
                                 <rect key="frame" x="332" y="274" width="37" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="arrowLeft"/>
@@ -611,7 +613,7 @@
                                     <action selector="RightButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="h3W-cO-0pG"/>
                                 </connections>
                             </button>
-                            <button hidden="YES" opaque="NO" tag="7" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vua-3F-HZa">
+                            <button opaque="NO" alpha="0.0" tag="7" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vua-3F-HZa">
                                 <rect key="frame" x="332" y="234" width="37" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="arrowLeft"/>
@@ -619,7 +621,7 @@
                                     <action selector="RightButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qmH-rG-aUv"/>
                                 </connections>
                             </button>
-                            <button hidden="YES" opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4D2-5h-VbI">
+                            <button opaque="NO" alpha="0.0" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4D2-5h-VbI">
                                 <rect key="frame" x="332" y="357" width="37" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="arrowLeft"/>
@@ -646,7 +648,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="0.86529947916666661" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
@@ -747,6 +749,6 @@
         <image name="arrowLeft" width="868" height="868"/>
         <image name="arrowRight" width="868" height="868"/>
         <image name="arrowUp" width="868" height="868"/>
-        <image name="grid" width="974" height="977"/>
+        <image name="grid" width="974" height="974"/>
     </resources>
 </document>
