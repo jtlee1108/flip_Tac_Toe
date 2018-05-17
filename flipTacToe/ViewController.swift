@@ -10,12 +10,11 @@ import UIKit
 
 class ViewController: UIViewController
 {
-    var playerTurn: Bool = true
+    var playerTurn: Int = 1
     let gravDirection = ["Down","Right","Up","Left"]
     var direction: Int = 0
     var boardArray = Array(repeating: Array(repeating: 0, count: 7), count: 7)
     var pointArray = Array(repeating: Array(repeating: 0, count: 7), count: 7)
-    var sign: Int = 1 //Determines the display according to which player makes the move
     let colorRed = UIColor(red: 1, green:0, blue: 0, alpha: 1)
     let colorBlack = UIColor(red: 0, green: 0, blue: 0, alpha: 1)
     let colorBlue = UIColor(red: 0, green: 0, blue: 1, alpha: 1)
@@ -34,14 +33,15 @@ class ViewController: UIViewController
     {
         if (direction < 3) { direction += 1}
         else {direction = 0}
-        runGame()
+        runGame(changeTurn: false)
     }
+    @IBOutlet var PlayerLabels: [UILabel]!
     
     @IBAction func RotateCW(_ sender: UIButton)
     {
         if (direction > 0) { direction -= 1}
         else {direction = 3}
-        runGame()
+        runGame(changeTurn: false)
     }
     
     @IBAction func ResetButton(_ sender: UIButton)
@@ -54,9 +54,11 @@ class ViewController: UIViewController
             }
         }
         direction = 0
-        runGame()
-        playerTurn = true
+        playerTurn = 1
+        runGame(changeTurn: false)
         PlayerTurnLabel.text = "Player 1"
+        PlayerLabels[0].isHighlighted = true
+        PlayerLabels[1].isHighlighted = false
         PlayerTurnLabel.textColor = colorRed
     }
     
@@ -64,8 +66,9 @@ class ViewController: UIViewController
     {
         if direction == 0 && boardArray[sender.tag - 1] [6] == 0
         {
-            boardArray[sender.tag - 1] [6] = sign
-            runGame()
+            boardArray[sender.tag - 1] [6] = playerTurn
+            runGame(changeTurn: true)
+            
         }
     }
     @IBOutlet var TopButtonOutlet: [UIButton]!
@@ -74,8 +77,8 @@ class ViewController: UIViewController
     {
         if direction == 1 && boardArray[0] [sender.tag - 1] == 0
         {
-            boardArray[0] [sender.tag - 1] = sign
-            runGame()
+            boardArray[0] [sender.tag - 1] = playerTurn
+            runGame(changeTurn: true)
         }
     }
     @IBOutlet var LeftButtonOutlet: [UIButton]!
@@ -84,8 +87,8 @@ class ViewController: UIViewController
     {
         if direction == 2 && boardArray[sender.tag - 1] [0] == 0
         {
-            boardArray[sender.tag - 1] [0] = sign
-            runGame()
+            boardArray[sender.tag - 1] [0] = playerTurn
+            runGame(changeTurn: true)
         }
     }
     @IBOutlet var BottomButtonOutlet: [UIButton]!
@@ -94,13 +97,13 @@ class ViewController: UIViewController
     {
         if direction == 3 && boardArray[6] [sender.tag - 1] == 0
         {
-            boardArray[6] [sender.tag - 1] = sign
-            runGame()
+            boardArray[6] [sender.tag - 1] = playerTurn
+            runGame(changeTurn: true)
         }
     }
     @IBOutlet var RightButtonOutlet: [UIButton]!
     
-    func runGame()
+    func runGame(changeTurn: Bool)
     {
         runGravity()
         changeSquares()
@@ -114,17 +117,20 @@ class ViewController: UIViewController
             changeSquares()
             checkForPoints()
         }
-        playerTurn = !playerTurn
-        if playerTurn
+        
+        if changeTurn {playerTurn = playerTurn * -1}
+        if playerTurn == 1
         {
             PlayerTurnLabel.text = "Player 1"
-            sign = 1
+            PlayerLabels[0].isHighlighted = true
+            PlayerLabels[1].isHighlighted = false
             PlayerTurnLabel.textColor = colorRed
         }
         else
         {
             PlayerTurnLabel.text = "Player 2"
-            sign = -1
+            PlayerLabels[0].isHighlighted = false
+            PlayerLabels[1].isHighlighted = true
             PlayerTurnLabel.textColor = colorBlue
         }
         for i in 0...6
@@ -153,9 +159,9 @@ class ViewController: UIViewController
                 RightButtonOutlet[i].fadeIn()
             }
         }
-        ScoreBoard[0].text = "Player1 : " + String(player1Score)
+        ScoreBoard[0].text = String(player1Score)
         ScoreBoard[0].textColor = colorRed
-        ScoreBoard[1].text = "Player2 : " + String(player2Score)
+        ScoreBoard[1].text = String(player2Score)
         ScoreBoard[1].textColor = colorBlue
     } // End runGame()
     
